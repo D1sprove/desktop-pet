@@ -1,0 +1,119 @@
+api:
+  base_url: https://api.deepseek.com
+  api_key_env: DEEPSEEK_API_KEY
+  api_key: ""                  # 留空：运行时自动读取 .env 中的 DEEPSEEK_API_KEY
+  flash_model: deepseek-chat
+  pro_model: deepseek-chat
+  timeout: 60
+  temperature: 0.85
+  max_tokens: 1024
+personality:
+  active: lively
+  presets:
+    lively:
+      name: 活泼
+      system: '你是住在用户桌面上的一只桌宠小助手，性格活泼、元气满满。
+
+        你关心用户今天过得怎么样，说话简短有梗，偶尔撒娇但绝不啰嗦。
+
+        回答控制在 3 句话以内，默认使用中文。
+
+        '
+    tsundere:
+      name: 毒舌
+      system: '你是住在用户桌面上的一只桌宠，嘴硬心软、毒舌傲娇。
+
+        你一边吐槽用户一边把事情办好；吐槽要克制，不做人身攻击。
+
+        回答控制在 3 句话以内，默认使用中文。
+
+        '
+    scholar:
+      name: 学霸
+      system: '你是住在用户桌面上的一只桌宠，严谨、理性，像个学霸助教。
+
+        你习惯分点作答、给出依据，并在必要时提醒用户休息。
+
+        回答控制在 5 句话以内，默认使用中文。
+
+        '
+pet:
+  width: 180
+  height: 200
+  x: -1
+  y: -1
+  opacity: 1.0
+  always_on_top: true
+  idle_fps: 3
+  active_fps: 12
+  sleep_after_minutes: 30
+  mouse_transparent: true
+context:
+  max_tokens: 6000
+  keep_recent: 12
+memory:
+  enabled: true
+  summarize_every_turns: 16
+  recall_limit: 8
+  max_facts: 300
+collector:
+  enabled: true
+  interval_seconds: 10
+  batch_size: 12
+  idle_threshold_seconds: 120
+  categories:
+    browser:
+    - chrome.exe
+    - msedge.exe
+    - firefox.exe
+    - brave.exe
+    - 360chrome.exe
+    ide:
+    - code.exe
+    - pycharm64.exe
+    - idea64.exe
+    - devenv.exe
+    - cursor.exe
+    - webstorm64.exe
+    - clion64.exe
+    - notepad++.exe
+    game:
+    - steam.exe
+    - wegame.exe
+    - leagueclient.exe
+    - valorant.exe
+    - minecraft.exe
+    - genshin.exe
+    - yuanshen.exe
+    office:
+    - winword.exe
+    - excel.exe
+    - powerpnt.exe
+    - wps.exe
+    - et.exe
+    - wpp.exe
+    im:
+    - wechat.exe
+    - weixin.exe
+    - qq.exe
+    - dingtalk.exe
+    - feishu.exe
+schedule:
+  enabled: true
+  check_interval_seconds: 60
+  remind_before_minutes: 15
+pomodoro:
+  work_minutes: 25
+  break_minutes: 5
+  long_break_minutes: 15
+  cycles_before_long_break: 4
+  auto_start_break: true
+ui:
+  font_family: Microsoft YaHei
+  font_size: 11
+  bubble_max_chars: 160
+  bubble_duration_ms: 9000
+logging:
+  level: INFO
+  max_bytes: 1048576
+  backup_count: 3

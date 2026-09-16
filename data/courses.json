@@ -1,0 +1,50 @@
+{
+  "term_start": "2026-09-07",
+  "courses": [
+    {
+      "name": "数据挖掘",
+      "teacher": "张老师",
+      "location": "教三-301",
+      "weekday": 1,
+      "start_time": "08:00",
+      "end_time": "09:40",
+      "weeks": "1-16"
+    },
+    {
+      "name": "数据库系统原理",
+      "teacher": "李老师",
+      "location": "教三-405",
+      "weekday": 1,
+      "start_time": "14:00",
+      "end_time": "15:40",
+      "weeks": "1-16"
+    },
+    {
+      "name": "机器学习",
+      "teacher": "王老师",
+      "location": "实验楼-A202",
+      "weekday": 3,
+      "start_time": "10:00",
+      "end_time": "11:40",
+      "weeks": "1-16"
+    },
+    {
+      "name": "软件工程",
+      "teacher": "赵老师",
+      "location": "教二-108",
+      "weekday": 4,
+      "start_time": "08:00",
+      "end_time": "09:40",
+      "weeks": "1-16"
+    },
+    {
+      "name": "体育（羽毛球）",
+      "teacher": "陈老师",
+      "location": "体育馆",
+      "weekday": 5,
+      "start_time": "16:00",
+      "end_time": "17:40",
+      "weeks": "1-16"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+# 密钥与隐私数据不入库
+.env
+*.db
+*.db-wal
+*.db-shm
+data/app.log
+data/ui_state.json
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.idea/
+.vscode/
